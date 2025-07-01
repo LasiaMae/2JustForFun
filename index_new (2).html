@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mae Prints | Custom Bedazzled Crocs</title>
+  <meta name="description" content="Mae Prints hand‑crafts blinged‑out Crocs that sparkle with your unique style. Design yours today." />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    @keyframes shimmer{0%{background-position:-450px 0}100%{background-position:450px 0}}
+    .shimmer{background:linear-gradient(90deg,rgba(255,255,255,0) 0%,rgba(255,255,255,.4) 50%,rgba(255,255,255,0) 100%);background-size:900px 100%;animation:shimmer 2.5s infinite}
+  </style>
+</head>
+<body class="min-h-screen flex flex-col font-sans text-gray-900 bg-pink-50">
+  <header class="w-full bg-pink-600/90 backdrop-blur py-4 sticky top-0 z-50 shadow">
+    <div class="max-w-7xl mx-auto flex items-center justify-between px-6">
+      <a href="#" class="text-2xl font-extrabold text-white tracking-tight">Mae&nbsp;Prints</a>
+      <nav class="hidden md:flex gap-8 text-white font-medium">
+        <a href="#gallery" class="hover:text-yellow-300 transition">Gallery</a>
+        <a href="#process" class="hover:text-yellow-300 transition">How&nbsp;It&nbsp;Works</a>
+        <a href="#reviews" class="hover:text-yellow-300 transition">Reviews</a>
+        <a href="#order" class="bg-yellow-300 text-pink-800 px-4 py-2 rounded-xl font-bold hover:scale-105 transition">Order Now</a>
+      </nav>
+      <button id="menuBtn" class="md:hidden text-white text-2xl focus:outline-none">☰</button>
+    </div>
+  </header>
+
+  <section class="flex-1 flex flex-col items-center justify-center text-center px-6 pt-10 pb-20 bg-gradient-to-b from-pink-500 via-pink-400 to-yellow-200">
+    <h1 class="text-4xl md:text-6xl font-extrabold text-white leading-tight max-w-4xl">Custom <span class="text-yellow-300">Bedazzled</span> Crocs That Shine
+      <div class="inline-block shimmer h-2 rounded-full w-24 mt-2"></div>
+    </h1>
+    <p class="mt-6 text-lg md:text-2xl text-white/90 max-w-2xl">Design Crocs that match your vibe—rhinestones, charms, and colors picked by you, handcrafted by Mae&nbsp;Prints.</p>
+    <a href="#order" class="mt-10 inline-block bg-yellow-300 text-pink-900 font-bold px-10 py-4 rounded-2xl shadow-lg hover:scale-105 transition">Start Designing</a>
+  </section>
+
+  <section id="gallery" class="py-16 bg-white">
+    <div class="max-w-6xl mx-auto px-6 text-center">
+      <h2 class="text-3xl font-bold mb-10">Sparkle Showcase</h2>
+      <div class="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
+        <figure class="relative group">
+          <img src="https://via.placeholder.com/600x400/FFE4E9/000?text=Rose+Gold+Bling" alt="Rose Gold Bling Crocs" class="rounded-2xl shadow-md group-hover:scale-105 transition" />
+        </figure>
+        <figure class="relative group">
+          <img src="https://via.placeholder.com/600x400/FDF6B2/000?text=Rainbow+Rhinestone" alt="Rainbow Rhinestone Crocs" class="rounded-2xl shadow-md group-hover:scale-105 transition" />
+        </figure>
+        <figure class="relative group">
+          <img src="https://via.placeholder.com/600x400/E0BBE4/000?text=Crystal+Clear+Glam" alt="Crystal Clear Glam Crocs" class="rounded-2xl shadow-md group-hover:scale-105 transition" />
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <section id="process" class="py-16 bg-pink-100">
+    <div class="max-w-5xl mx-auto px-6">
+      <h2 class="text-3xl font-bold text-center mb-12">How It Works</h2>
+      <div class="grid gap-8 sm:grid-cols-3 text-center">
+        <div class="p-6 bg-white rounded-2xl shadow hover:shadow-lg transition">
+          <span class="text-4xl font-extrabold text-pink-600">1</span>
+          <p class="mt-4 font-medium">Submit your design ideas</p>
+        </div>
+        <div class="p-6 bg-white rounded-2xl shadow hover:shadow-lg transition">
+          <span class="text-4xl font-extrabold text-pink-600">2</span>
+          <p class="mt-4 font-medium">Mae Prints hand‑bedazzles your Crocs</p>
+        </div>
+        <div class="p-6 bg-white rounded-2xl shadow hover:shadow-lg transition">
+          <span class="text-4xl font-extrabold text-pink-600">3</span>
+          <p class="mt-4 font-medium">Shipped free within 48&nbsp;hours</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="reviews" class="py-16 bg-white">
+    <div class="max-w-6xl mx-auto px-6 text-center">
+      <h2 class="text-3xl font-bold mb-10">Customer Glow‑Ups</h2>
+      <div class="grid gap-8 md:grid-cols-3">
+        <blockquote class="bg-pink-50 rounded-2xl p-6 shadow">
+          <p class="italic">“The sparkle is unreal! I wore them to brunch and strangers stopped me.”</p>
+          <footer class="mt-4 font-semibold">— Lisa&nbsp;P.</footer>
+        </blockquote>
+        <blockquote class="bg-pink-50 rounded-2xl p-6 shadow">
+          <p class="italic">“Quality stones and fast delivery. Buying another pair for my sister!”</p>
+          <footer class="mt-4 font-semibold">— Jordan&nbsp;M.</footer>
+        </blockquote>
+        <blockquote class="bg-pink-50 rounded-2xl p-6 shadow">
+          <p class="italic">“Exactly what I envisioned. Mae Prints nailed every detail.”</p>
+          <footer class="mt-4 font-semibold">— Aaliyah&nbsp;R.</footer>
+        </blockquote>
+      </div>
+    </div>
+  </section>
+
+  <section id="order" class="py-16 bg-pink-600">
+    <div class="max-w-xl mx-auto px-6">
+      <h2 class="text-3xl font-bold text-white text-center mb-8">Design & Order</h2>
+      <form id="orderForm" class="space-y-6">
+        <input type="text" id="name" name="name" placeholder="Name" required class="w-full rounded-lg p-3 bg-pink-50 border border-pink-300 focus:ring-2 focus:ring-yellow-300" />
+        <input type="email" id="email" name="email" placeholder="Email" required class="w-full rounded-lg p-3 bg-pink-50 border border-pink-300 focus:ring-2 focus:ring-yellow-300" />
+        <select id="size" name="size" required class="w-full rounded-lg p-3 bg-pink-50 border border-pink-300 focus:ring-2 focus:ring-yellow-300">
+          <option value="" disabled hidden>Select Size (US)</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+          <option value="6">6</option>
+          <option value="7">7</option>
+          <option value="8">8</option>
+          <option value="9">9</option>
+          <option value="10">10</option>
+          <option value="11">11</option>
+          <option value="12">12</option>
+          <option value="13">13</option>
+        </select>
+        <textarea id="request" name="request" rows="4" placeholder="Describe colors, characters, and sparkle level…" required class="w-full rounded-lg p-3 bg-pink-50 border border-pink-300 focus:ring-2 focus:ring-yellow-300"></textarea>
+        <button type="submit" class="w-full bg-yellow-300 text-pink-900 font-bold py-3 rounded-xl hover:scale-[1.02] transition">Submit Request</button>
+      </form>
+      <p id="thankyou" class="hidden text-center mt-6 text-lg font-semibold text-white"></p>
+    </div>
+  </section>
+
+  <footer class="bg-pink-800 text-pink-100 text-center py-6 text-sm">
+    © 2025 Mae Prints LLC · Handcrafted in Atlanta, GA · <a href="mailto:hello@maeprintsllc.com" class="underline hover:text-yellow-300">hello@maeprintsllc.com</a>
+  </footer>
+
+  <a href="#order" class="fixed bottom-6 right-6 bg-yellow-300 text-pink-900 px-5 py-3 rounded-full font-bold shadow-lg animate-bounce sm:hidden">Order</a>
+
+  <script>
+    const menuBtn=document.getElementById('menuBtn');
+    menuBtn&&menuBtn.addEventListener('click',()=>{
+      const nav=document.querySelector('header nav');
+      nav.classList.toggle('hidden');
+    });
+    document.getElementById('orderForm').addEventListener('submit',e=>{
+      e.preventDefault();
+      const msg=document.getElementById('thankyou');
+      msg.textContent='Thank you! Your sparkle order is on its way to our workshop.';
+      msg.classList.remove('hidden');
+      e.target.reset();
+      window.scrollTo({top:0,behavior:'smooth'});
+    });
+  </script>
+</body>
+</html>
